@@ -4,6 +4,12 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
+variable "aws_role_arn" {
+  description = "AWS IAM role ARN to assume for deployment"
+  type        = string
+  default     = "arn:aws:iam::490806821154:role/deploy-role"
+}
+
 variable "ami_id" {
   description = "AMI ID for the EC2 instance"
   type        = string
